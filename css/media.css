@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) and (min-width: 768px){
+@media (max-width: 1024px){
     body{
       font-size: 14px;
   }
@@ -47,13 +47,44 @@
   }
   }
   
-  @media screen and (max-width: 425px) and (min-width: 320px){
+  @media (max-width: 768px){
+
+    [class*=img]{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 40px;
+    }
+
+    .benefits h4{
+        margin-bottom: 30px;
+    }
+
+    .section__title{
+        margin-bottom: 45px;
+    }
+
+    .benefits .section__header{
+        margin-bottom: 90px;
+    }
+    .prices, .feedback, .bottom-promo, .contact{
+        padding-top: 90px;
+    }
+    .feedback .section__header {
+        margin-bottom: 55px;
+    }
+    .feedback h4 {
+        font-size: 15px;
+    }
+    }
+
+ @media (max-width: 425px){
   body{
       font-size: 14px;
   }
   .benefits, .prices, .bottom-promo, .contact{
       padding-top: 50px;
   }
+
   .footer{
       padding-top: 35px;
       padding-bottom: 45px;
@@ -70,9 +101,6 @@
   }
   .contact{
       padding-bottom: 40px;
-  }
-  .container{
-      width: 100%;
   }
   .wrapper{
       max-width: 283px;
@@ -98,7 +126,6 @@
   .poster h1{
       text-align: center;
       font-size: 36px;
-      width: 288px;
    }
   .poster__form {
       width: 288px;
@@ -129,6 +156,9 @@
   h5{
       font-size: 14px;
   }
+  .section__title{
+    margin-bottom: 35px;
+}
   .media{
       padding: 25px 0;
   }
@@ -145,6 +175,9 @@
   .media__icons, .footer__icons{
       gap: 17px;
   }
+  .media__icons{
+    height: 50px;
+  }
   .media__icons svg, .footer__icons svg{
       width: 26px;
       height: 26px;
@@ -155,8 +188,15 @@
       align-items: center;
       gap: 35px;
   }
+  .benefits .section__header{
+    margin-bottom: 45px;
+}
   .benefits__item{
       width: 100%;
+  }
+  [class*=img]{
+    width: 83px;
+    height: 83px;
   }
   .prices__table{
       display: flex;
@@ -202,4 +242,19 @@
   .feedback--mobile{
       display: block;
   }
+  .contact .section__header{
+    margin-bottom: 67px;
+}
   }  
+
+  @media (max-width: 375px){
+    .poster__info {
+        width: 300px;
+    }
+    .benefits h4 {
+        margin-bottom: 25px;
+    }
+    [class*=img]{
+        margin-bottom: 35px;
+      }
+    }

@@ -50,7 +50,7 @@ a {
 
 .hidden-menu{
     width: 35px;
-    height: 25px;
+    height: 23px;
     display: none;
 }
 .hidden-menu label{
@@ -91,10 +91,10 @@ a {
     opacity: 0;
 }
 .checkbox:checked ~ label .lines .line1{ 
-    transform: translateY(240%) rotate(50deg);
+    transform: translateY(240%) rotate(45deg);
 }
 .checkbox:checked ~ label .lines .line3{
-    transform: translateY(-240%)rotate(-50deg);
+    transform: translateY(-240%)rotate(-45deg);
 }
 .header__toggle-menu{
     background-color: #000;
@@ -235,7 +235,7 @@ a {
   .poster__form span{
     color: #EC7979;
 }
-.poster__form .input{
+.poster__form .input__item{
     height: 42px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
@@ -504,7 +504,6 @@ h5{
     content:"";
     clear: both;
     display: block;
-    position: absolute;
     height: 0px;
     width: 0px;
     border-left: 12px solid transparent;
@@ -592,9 +591,11 @@ h5{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
+    margin-bottom: 50px;
 }
 
-.contact__form .input{
+.contact__form .input__item{
+    margin-bottom: 27px;
     color: #BDBDBD;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -607,7 +608,6 @@ h5{
     height: 40px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    margin-bottom: 27px;
     padding-left: 3px;
     outline: none;
 }
@@ -640,7 +640,6 @@ h5{
 
 .bot-form .button--big{
     background-color: #EC7979;
-    margin-top: 50px;
     cursor: pointer;
 }
 .bot-form .button--big:hover{
